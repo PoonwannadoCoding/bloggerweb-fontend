@@ -8,7 +8,7 @@
             </div>
 
             <div class="app-name">
-                BLOGGER
+                {{ title }}
             </div>
             
             <div class="search-bar-container">
@@ -26,10 +26,10 @@
 <script>
     import 'primeicons/primeicons.css'
     export default {
+        props: ['title'],
         name: 'NavBar',
     }
 </script>
-
 
 <style>
 
