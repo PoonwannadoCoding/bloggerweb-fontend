@@ -6,7 +6,7 @@
             <i :class="logo"></i>
             </div>
         
-        <h2 class="side-panel-text"> {{ topic }} </h2>
+        <p class="side-panel-text"> {{ topic }} </p>
 
     </div>
 
@@ -41,12 +41,13 @@ export default {
         flex: 0 0 auto;
         width: 250px; 
         cursor: pointer;
+        font-size: 20px;
 
 }
 
 .card-logo {
         color: black;
-        font-size: 30px;
+        font-size: 25px;
         margin-right: 10px;
         margin-left: 10px;
         cursor: pointer;

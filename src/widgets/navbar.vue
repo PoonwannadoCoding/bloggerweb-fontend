@@ -39,7 +39,8 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 10px; 
+        padding: 0 10px;
+        min-width: 20vw; 
     }
 
     .app-bar {
