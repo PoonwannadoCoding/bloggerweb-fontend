@@ -5,8 +5,7 @@
         <div class="card-logo">
             <i :class="logo"></i>
             </div>
-        
-        <p class="side-panel-text"> {{ topic }} </p>
+            <router-link class="side-panel-text" :to="path"> {{ topic }} </router-link>
 
     </div>
 
@@ -17,13 +16,9 @@
     import 'primeicons/primeicons.css'
 
 export default {
-        props: ['topic', 'logo'],
+        props: ['topic', 'logo', 'path'],
         name: 'SideBarText',
-        methods: {
-        handleClick(topic) {
-        console.log("CLICKED");
-    }
-  }
+        
     }
 </script>
 
@@ -33,15 +28,20 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 15%;
+    padding-top: 5%;
+
 
 
 }
 
 .side-panel-text{
+        color: black;
         flex: 0 0 auto;
         width: 250px; 
         cursor: pointer;
         font-size: 20px;
+        text-decoration: none;
 
 }
 

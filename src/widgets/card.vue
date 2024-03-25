@@ -51,8 +51,8 @@ export default {
 }
 
 .blog_card{
-    width: 100%;
-    border-radius: 20px;
+    width: 500px;
+    border-radius: 12px;
     background-color: hsl(219, 15%, 37%);
     padding: 2px 16px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

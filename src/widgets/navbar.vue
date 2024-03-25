@@ -43,10 +43,17 @@ nav {
         min-width: 20vw; 
     }
 
-    .app-bar {
+    @layer outer{
+        .app-bar {
+        position: fixed;
         margin: 0;
         padding: 0;
+        width: 100%;
+        z-index: 1;
     }
+
+    }
+    
 
     .search-bar-container {
         flex: 1;
